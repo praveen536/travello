@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>keep smile {{name}}</h1>
+
+<form action="add" method="POST">
+
+    {% csrf_token %}
+    Enter first nunber:<input type="text" name="inp1">
+    Enter second nunber:<input type="text" name="inp2">
+    <input type="submit">
+</form>
+
+{% endblock %}
